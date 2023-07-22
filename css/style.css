@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+body {
+    background-color: red;
+}
+
+/* HidingTheScrollBar */
+body::-webkit-scrollbar {
+    display: none;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+/* CSSreset */
+* {
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main {
+    display: flex;
+    flex-direction: column;
+
+}
+/* NavigationStyle */
+.navbar {
+    display: flex;
+    height: 100%;
+    position: relative;
+    justify-content: space-between;
+}
+
+.navbar::before {
+    content: "";
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+/* TheMainNameOfTheShop */
+.brand {
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+}
+#logo {
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 10px 10px;
+    padding: 0px 10px;
+    font-size: 4rem;
+    width: 300px;
+    display: block;
+    transition: .2s;
+    justify-content: center;
+}
+#logo:hover {
+    scale: 1.1;
+}
+/* NavigationLinks */
+.navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar ul li a {
+    color: white;
+    margin: 10px;
+    padding: 20px;
+    font-size: 1.3rem;
+    padding: 10px;
+    transition: .2s;
+}
+
+.navbar ul li a:hover {
+    color: black;
+    font-weight: 500;
+    background-color: white;
+    border-radius: 30px;
+}
+
+/* NavigationBarEndsHere */
+
+/* MainSectionStartsHere */
+.Home {
+    position: relative;
+    display: inline-flex;
+    padding: 10px;
+    margin: 150px auto; 
+}
+
+#HomeTextContainer {
+    display: inline-flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 5px;
+    align-self: center;
+}
+
+.Home h3 {
+    font-size: 2em;
+    z-index: 1;
+    color: black;
+    display: inline-block;
+    letter-spacing: .5em;
+}
+
+.Home h1 {
+    font-size: 10rem;
+    line-height: 140px;
+    color: white;
+    z-index: -1;
+    letter-spacing: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.Home p {
+    font-size: 1.3rem;
+    z-index: 2;
+    color: black;
+    font-weight: 600;
+    display: inline-block;
+    width: 600px;
+}
+
+.buttons {
+    display: flex;
+    justify-self: left;
+    margin-top: 10px;
+}
+
+.btn {
+    background: white;
+    width: 200px;
+    border: 1px solid white;
+    border-radius: 36px;
+    padding: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.btn a {
+    font-size: 1.3rem;
+    color: red;
+    font-weight: 600;
+}
+
+.btn:hover {
+    box-shadow: 0 0 50px white;
+    color: red;
+    scale: 1.1;
+    letter-spacing: 1px;
+    transition: .2s;
+    transition-timing-function: ease-in-out;
+}
+
+.HomeImg img {
+    height: 100%;
+}
+#HomeImg img:hover {
+    scale: 1.1;
+    transition: .2s;
+    transition-timing-function: ease-in-out;
+    transform: rotate(-1deg);
+}
+/* MainSectionEndsHere */
+
+/* NextSectionStartsHere */
+.Second {
+    background-color: white;
+    height: 100%;
+}
+.BestSellersHeading {
+    font-size: 4rem;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.BestSellersContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+.Second img:hover {
+    scale: 1.1;
+    transition: .2s;
+    transition-timing-function: ease-in-out;
+    transform: rotate(-1deg);
+}
+.BestSellersItems {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 50px;
+    height: 100%;
+    font-size: 1.5rem;
+}
+.BestSellersItems:nth-child(1) {
+    justify-content: space-evenly;
+    align-items: center;
+}
+.BestSellersItems:nth-child(2) {
+    justify-content: space-evenly;
+    align-items: center;
+    background: red;
+    color: white;
+    flex-direction: row-reverse;
+}
+.BestSellersItems:nth-child(3) {
+    justify-content: space-evenly;
+    align-items: center;
+}
+.BestSellersItems:nth-child(4) {
+    justify-content: space-evenly;
+    align-items: center;
+    background: red;
+    flex-direction: row-reverse;
+    color: white;
+}
+.BestSellersItems:nth-child(5) {
+    justify-content: space-evenly;
+    align-items: center;
+}
+.BestSellersImg {
+    width: 100%;
+}
+.BestSellersImg img {
+    height: 500px;
+}
+.BestSellersText {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+/* BestSellersEndsHere */
+
+/* ClientsSectionStartsHere */
+.ClientsSection {
+    height: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ClientsSection h3 {
+    font-size: 4rem;
+}
+.clientscontainer {
+    display: flex;
+    padding: 2px;
+    width: 100vw;
+    justify-content: space-evenly;
+
+}
+.clients {
+    width: 200px;
+    height: 100%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.clients img {
+    width: 100%;
+}
+.clientstext {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    color: red;
+}
+.clients:hover {
+    scale: 1.1;
+    letter-spacing: 1px;
+    transition: .2s;
+    transition-timing-function: ease-in-out;
+}
+/* ClientsSectionEndsHere */
+
+/* FooterStartsHere */
+.FooterSection {
+    height: 50vh;
+    background-color: white;
+    padding: 10px;
+}
+.FooterContainer {
+    display: flex;
+    padding: 10px;
+    height: 100%;
+    justify-content: space-evenly
+}
+.CompanyLogo {
+    display: flex;
+    justify-content: space-evenly;
+    width: 25%;
+}
+.CompanyLogo .logo1 {
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+.logo1 a {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3em;
+    color: red;
+    transition: .2s;
+    transition-timing-function: ease-in-out;
+}
+.logo1 a:hover{
+    letter-spacing: 5px;
+    color: #7f0000;
+}
+
+.FooterLinks {
+    width: 70%;
+    display: flex;
+    padding: 5px;
+}
+.FooterLinks .links {
+    width: 25%;
+    height: 100%;
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.links .heading {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.links ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    width: 100%;
+    margin: 10px 0;
+}
+ul li {
+    padding: 2px;
+}
+.links ul li a {
+    color: red;
+    text-decoration: none;
+    transition: .2s;
+}
+.links ul li a:hover {
+    color: #7f0000;
+    letter-spacing: 1.2px;
+}
+.AppImg img {
+    width: 100%;
+}
+#icons li {
+    padding: 5px;
+}
+#icons li a i {
+    scale: 2;
+}
+
+.SubFooter {
+    height: 5vh;
+    background-color: #7f0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.SubFooterContainer h6 {
+    color: white;
+    font-size: 1rem;
+    font-weight: 100;
+    opacity: .5;
+}
+.SubFooterContainer h6 a {
+    color: white;
+    font-size: 1rem;
+    font-weight: 100;
+    opacity: 1;
+    font-family: 'Bebas Neue', sans-serif;
+    text-decoration: underline;
+}
+#App:hover {
+    scale: 1.1;
+    transition: .2s;
+    transition-timing-function: ease-in-out;
+}
